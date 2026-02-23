@@ -11,7 +11,7 @@
 | Edad | `18 anios` |
 | Correo | `cameza@unicesar.edu.co` |
 | GitHub | `@AndrehMZ` |
-| LinkedIn | `linkedin.com/in/tu-perfil` |
+
 
 ## Habilidades tecnicas
 
