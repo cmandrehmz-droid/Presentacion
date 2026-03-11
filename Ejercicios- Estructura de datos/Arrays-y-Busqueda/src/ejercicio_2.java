@@ -30,7 +30,7 @@ public class ejercicio_2 {
     }
 
     
-public static int busquedaBinaria(List<String> lista, String objetivo) {
+    public static int busquedaBinaria(List<String> lista, String objetivo) {
         int inicio = 0;
         int fin = lista.size() - 1;
 

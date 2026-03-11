@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Ejercicio_3 {
     /* 3. Sensor de Temperatura (Control de Calidad)
     Una máquina industrial registra la temperatura cada 10 minutos y guarda los datos en un arreglo.
