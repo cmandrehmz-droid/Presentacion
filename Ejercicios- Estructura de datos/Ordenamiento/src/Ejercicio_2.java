@@ -21,13 +21,9 @@ public class Ejercicio_2 {
         for (int i = 0; i < n; i++) {
             System.out.print("Ingrese el ISBN del libro " + (i + 1) + ": ");
             libros[i] = sc.nextInt();
-        }
-
-        System.out.println("\nArreglo original:");
-        mostrar(libros);
 
         
-        for (int i = 1; i < n; i++) {
+        
 
             int clave = libros[i];
             int j = i - 1;
@@ -38,16 +34,16 @@ public class Ejercicio_2 {
             }
 
             libros[j + 1] = clave;
-            System.out.println("Paso " + i + ":");
             mostrar(libros);
+            System.out.println("\nArreglo ordenado final:");
+            mostrar(libros);
+        
+
+        
         }
-
-        System.out.println("\nArreglo ordenado final:");
-        mostrar(libros);
-
         sc.close();
+    
     }
-
     public static void mostrar(int[] arreglo) {
         System.out.print("[");
         for (int i = 0; i < arreglo.length; i++) {
