@@ -19,27 +19,25 @@ public class Ejercicio_2 {
 
         
         for (int i = 0; i < n; i++) {
+
             System.out.print("Ingrese el ISBN del libro " + (i + 1) + ": ");
-            libros[i] = sc.nextInt();
+            int nuevo = sc.nextInt();
 
-        
-        
+            int pos = n - 1 - i;
+            libros[pos] = nuevo;
 
-            int clave = libros[i];
-            int j = i - 1;
+            
+            int j = pos;
 
-            while (j >= 0 && libros[j] > clave) {
-                libros[j + 1] = libros[j];
-                j--;
+            while (j < n - 1 && libros[j] > libros[j + 1]) {
+                int temp = libros[j];
+                libros[j] = libros[j + 1];
+                libros[j + 1] = temp;
+                j++;
             }
 
-            libros[j + 1] = clave;
+            System.out.println("Estado del arreglo:");
             mostrar(libros);
-            System.out.println("\nArreglo ordenado final:");
-            mostrar(libros);
-        
-
-        
         }
         sc.close();
     
